@@ -1,0 +1,143 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "bootstrap.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.css";
+@import "typography";
+@import "text";
+@import "variables";
+@import "backgrounds";
+@import "buttons";
+
+.right {
+  position: relative;
+  margin-left: -8.333333%;
+}
+
+.left {
+  z-index: 2;
+  margin-right: -8.333333%;
+}
+
+@media (max-width: 767px) {
+  .left,
+  .right {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.navbar-toggler {
+  span {
+
+  }
+  color: $black-color;
+}
+
+.services-section {
+  padding: 76px 0px;
+  .owl-nav button.owl-next, .owl-nav button.owl-prev {
+    display: none;
+  }
+}
+
+.advantages-section {
+  padding-bottom: 76px;
+}
+
+.owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+  border: 1px solid $black-color;
+  display: inline-block;
+  margin: 0 9px;
+  margin-top: 57px;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: $black-color;
+}
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  li > a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: $black-color;
+    &:hover {
+      color: $gray-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px 24px;
+  &:hover {
+    color: $blue-color;
+  }
+}
+
+.social-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: $white-color;
+  background-color: $gray-color;
+  line-height: 27px;
+  font-size: 16px;
+  text-align: center;
+  a {
+    color: $white-color;
+    position: relative;
+    bottom: 20px;
+  }
+}
+
+.articles-section {
+  .owl-nav button.owl-next {
+    background-image: url("../images/arrow-next.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    color: $black-color;
+    position: absolute;
+    top: 140px;
+    right: -90px;
+
+    span {
+      display: none;
+    }
+  }
+
+  .owl-nav button.owl-prev {
+    background-image: url("../images/arrow-prev.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 64px;
+    height: 64px;
+    color: $black-color;
+    position: absolute;
+    top: 140px;
+    left: -90px;
+
+    span {
+      display: none;
+    }
+  }
+
+  .card-body {
+    padding: 48px;
+  }
+}
+
+
+

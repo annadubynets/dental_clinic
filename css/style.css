@@ -1,0 +1,243 @@
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "bootstrap.min.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.css";
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: local("Ubuntu"), url("../fonts/ubuntu.woff2") format("woff2"), url("../fonts/ubuntu.woff") format("woff"), url("../fonts/ubuntu.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("../fonts/ubuntumedium.woff2") format("woff2"), url("../fonts/ubuntumedium.woff") format("woff"), url("../fonts/ubuntumedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url("../fonts/ubuntubold.woff2") format("woff2"), url("../fonts/ubuntubold.woff") format("woff"), url("../fonts/ubuntubold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.font-size-xs {
+  font-size: 16px;
+}
+
+.font-size-sm {
+  font-size: 18px;
+}
+
+.font-size-md {
+  font-size: 20px;
+}
+
+.font-size-lg {
+  font-size: 24px;
+}
+
+.font-size-xl {
+  font-size: 42px;
+}
+
+h1 {
+  font-family: "Ubuntu-Bold", sans-serif;
+  font-size: 42px;
+  color: #5B5E5F;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-dark {
+  color: #5B5E5F !important;
+}
+
+.text-primary {
+  color: #457692 !important;
+}
+
+.text-warning {
+  color: #96999A !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-gray {
+  background-color: #EFEEEB !important;
+}
+
+.btn-primary {
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #457692;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  padding: 15px 46px;
+}
+
+.btn-light {
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #457692;
+  border: 2px solid #457692;
+  text-align: center;
+  padding: 15px 46px;
+}
+
+.btn-xlg {
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #457692;
+  border: 2px solid #457692;
+  padding: 12px 16px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.btn-lg {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 15px 46px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.btn-primary:active, .btn-light:active, .btn-primary:focus, .btn-light:focus, .btn-primary:hover, .btn-light:hover {
+  background-color: #ffffff !important;
+  border-color: #457692 !important;
+  color: #457692 !important;
+  outline: none !important;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+.btn:active, .btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.right {
+  position: relative;
+  margin-left: -8.333333%;
+}
+
+.left {
+  z-index: 2;
+  margin-right: -8.333333%;
+}
+
+@media (max-width: 767px) {
+  .left,
+.right {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.navbar-toggler {
+  color: #5B5E5F;
+}
+.services-section {
+  padding: 76px 0px;
+}
+.services-section .owl-nav button.owl-next, .services-section .owl-nav button.owl-prev {
+  display: none;
+}
+
+.advantages-section {
+  padding-bottom: 76px;
+}
+
+.owl-dots .owl-dot span {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #5B5E5F;
+  display: inline-block;
+  margin: 0 9px;
+  margin-top: 57px;
+}
+
+.owl-dots {
+  text-align: center;
+}
+
+.owl-dots .owl-dot.active span {
+  background-color: #5B5E5F;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li > a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #5B5E5F;
+}
+footer ul li > a:hover {
+  color: #96999A;
+  text-decoration: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0px 24px;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #457692;
+}
+
+.social-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  background-color: #96999A;
+  line-height: 27px;
+  font-size: 16px;
+  text-align: center;
+}
+.social-img a {
+  color: #ffffff;
+  position: relative;
+  bottom: 20px;
+}
+
+.articles-section .owl-nav button.owl-next {
+  background-image: url("../images/arrow-next.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 64px;
+  color: #5B5E5F;
+  position: absolute;
+  top: 140px;
+  right: -90px;
+}
+.articles-section .owl-nav button.owl-next span {
+  display: none;
+}
+.articles-section .owl-nav button.owl-prev {
+  background-image: url("../images/arrow-prev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 64px;
+  color: #5B5E5F;
+  position: absolute;
+  top: 140px;
+  left: -90px;
+}
+.articles-section .owl-nav button.owl-prev span {
+  display: none;
+}
+.articles-section .card-body {
+  padding: 48px;
+}
+
+/*# sourceMappingURL=style.css.map */

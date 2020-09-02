@@ -1,0 +1,29 @@
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-dark {
+  color: #3d3d3b !important;
+}
+
+.text-primary {
+  color: #00aeef !important;
+}
+
+.text-info {
+  color: #14ccc0 !important;
+}
+
+.text-danger {
+  color: #fb7454 !important;
+}
+
+.text-success {
+  color: #58794c !important;
+}
+
+.text-warning {
+  color: #efc869 !important;
+}
+
+/*# sourceMappingURL=text.css.map */

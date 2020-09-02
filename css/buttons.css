@@ -1,0 +1,20 @@
+.btn-primary {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #457692;
+  color: #ffffff;
+  border-radius: 25px;
+  border-color: #457692;
+  letter-spacing: 0.3px;
+  text-align: center;
+  padding: 12px 18px;
+}
+
+.btn-lg {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 20px 48px;
+  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
+}
+
+/*# sourceMappingURL=buttons.css.map */
