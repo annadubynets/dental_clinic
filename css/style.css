@@ -3,22 +3,20 @@
 @import "owl.carousel.min.css";
 @import "owl.theme.default.css";
 @font-face {
-  font-family: "Ubuntu-Regular";
-  src: local("Ubuntu"), url("../fonts/ubuntu.woff2") format("woff2"), url("../fonts/ubuntu.woff") format("woff"), url("../fonts/ubuntu.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Arvo";
+  src: url("../fonts/Arvo.eot");
+  src: url("../fonts/Arvo.eot?#iefix") format("embedded-opentype"), url("../fonts/Arvo.woff2") format("woff2"), url("../fonts/Arvo.woff") format("woff"), url("../fonts/Arvo.ttf") format("truetype"), url("../fonts/Arvo.svg#Arvo") format("svg");
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "Ubuntu-Medium";
-  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("../fonts/ubuntumedium.woff2") format("woff2"), url("../fonts/ubuntumedium.woff") format("woff"), url("../fonts/ubuntumedium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "Arvo-Bold";
+  src: url("../fonts/Arvo-Bold.eot");
+  src: url("../fonts/Arvo-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Arvo-Bold.woff2") format("woff2"), url("../fonts/Arvo-Bold.woff") format("woff"), url("../fonts/Arvo-Bold.ttf") format("truetype"), url("../fonts/Arvo-Bold.svg#Arvo-Bold") format("svg");
+  font-weight: bold;
   font-style: normal;
-}
-@font-face {
-  font-family: "Ubuntu-Bold";
-  src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url("../fonts/ubuntubold.woff2") format("woff2"), url("../fonts/ubuntubold.woff") format("woff"), url("../fonts/ubuntubold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
+  font-display: swap;
 }
 .font-size-xs {
   font-size: 16px;
@@ -41,7 +39,7 @@
 }
 
 h1 {
-  font-family: "Ubuntu-Bold", sans-serif;
+  font-family: "Arvo-Bold", sans-serif;
   font-size: 42px;
   color: #5B5E5F;
 }
@@ -62,8 +60,16 @@ h1 {
   color: #96999A !important;
 }
 
-.bg-white {
-  background-color: #ffffff !important;
+@media screen and (min-width: 768px) {
+  .bg-lg-white {
+    background-color: #ffffff !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bg-xs-transparent {
+    background-color: transparent !important;
+  }
 }
 
 .bg-gray {
@@ -97,14 +103,12 @@ h1 {
   color: #457692;
   border: 2px solid #457692;
   padding: 12px 16px;
-  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
 }
 
 .btn-lg {
   font-size: 18px;
   line-height: 26px;
   padding: 15px 46px;
-  box-shadow: 0px 15px 18px rgba(87, 74, 151, 0.21);
 }
 
 .btn-primary:active, .btn-light:active, .btn-primary:focus, .btn-light:focus, .btn-primary:hover, .btn-light:hover {
@@ -129,6 +133,11 @@ h1 {
   z-index: 2;
   margin-right: -8.333333%;
 }
+@media screen and (max-width: 992px) {
+  .left {
+    margin-right: -60.333333%;
+  }
+}
 
 @media (max-width: 767px) {
   .left,
@@ -137,9 +146,15 @@ h1 {
     margin-right: 0px;
   }
 }
-.navbar-toggler {
-  color: #5B5E5F;
+@media screen and (max-width: 768px) {
+  .main-section {
+    background-image: url("../images/main_mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 67px 0px 71px;
+  }
 }
+
 .services-section {
   padding: 76px 0px;
 }
@@ -185,13 +200,6 @@ footer ul li > a:hover {
   text-decoration: none;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px 24px;
-}
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: #457692;
-}
-
 .social-img {
   display: inline-block;
   width: 32px;
@@ -217,7 +225,7 @@ footer ul li > a:hover {
   color: #5B5E5F;
   position: absolute;
   top: 140px;
-  right: -90px;
+  right: -80px;
 }
 .articles-section .owl-nav button.owl-next span {
   display: none;
@@ -231,7 +239,7 @@ footer ul li > a:hover {
   color: #5B5E5F;
   position: absolute;
   top: 140px;
-  left: -90px;
+  left: -80px;
 }
 .articles-section .owl-nav button.owl-prev span {
   display: none;

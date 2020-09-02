@@ -1,8 +1,18 @@
 @import "variables";
+@import "mixins";
 
-.bg-white {
-  background-color: $white-color!important;
+.bg-lg-white {
+  @include min-width($md-screen) {
+    background-color: $white-color!important;
+  }
 }
+
+.bg-xs-transparent {
+  @include max-screen($md-screen) {
+    background-color: transparent!important;
+  }
+}
+
 
 .bg-gray {
   background-color: $gray-light-color!important;

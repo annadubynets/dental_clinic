@@ -7,6 +7,7 @@
 @import "variables";
 @import "backgrounds";
 @import "buttons";
+@import "mixins";
 
 .right {
   position: relative;
@@ -16,6 +17,9 @@
 .left {
   z-index: 2;
   margin-right: -8.333333%;
+  @include max-screen($lg-screen) {
+    margin-right: -60.333333%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -26,11 +30,13 @@
   }
 }
 
-.navbar-toggler {
-  span {
-
-  }
-  color: $black-color;
+.main-section {
+    @include max-screen($md-screen) {
+      background-image: url("../images/main_mobile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 67px 0px 71px;
+    }
 }
 
 .services-section {
@@ -78,13 +84,6 @@ footer ul{
   }
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px 24px;
-  &:hover {
-    color: $blue-color;
-  }
-}
-
 .social-img {
   display: inline-block;
   width: 32px;
@@ -111,7 +110,7 @@ footer ul{
     color: $black-color;
     position: absolute;
     top: 140px;
-    right: -90px;
+    right: -80px;
 
     span {
       display: none;
@@ -127,7 +126,7 @@ footer ul{
     color: $black-color;
     position: absolute;
     top: 140px;
-    left: -90px;
+    left: -80px;
 
     span {
       display: none;
