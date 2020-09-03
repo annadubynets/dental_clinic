@@ -8,6 +8,7 @@
 @import "backgrounds";
 @import "buttons";
 @import "mixins";
+@import "navbars";
 
 .right {
   position: relative;
@@ -22,7 +23,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include max-screen($md-screen) {
   .left,
   .right {
     margin-left: 0px;
@@ -110,9 +111,11 @@ footer ul{
     color: $black-color;
     position: absolute;
     top: 140px;
-    right: -80px;
-
+    right: -65px;
     span {
+      display: none;
+    }
+    @include max-screen(1280px) {
       display: none;
     }
   }
@@ -126,15 +129,23 @@ footer ul{
     color: $black-color;
     position: absolute;
     top: 140px;
-    left: -80px;
-
+    left: -65px;
     span {
+      display: none;
+    }
+    @include max-screen(1280px) {
       display: none;
     }
   }
 
   .card-body {
     padding: 48px;
+  }
+}
+
+.dropdown-menu {
+  @include max-screen($lg-screen){
+    border: none;
   }
 }
 

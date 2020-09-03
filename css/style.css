@@ -3,17 +3,25 @@
 @import "owl.carousel.min.css";
 @import "owl.theme.default.css";
 @font-face {
-  font-family: "Arvo";
-  src: url("../fonts/Arvo.eot");
-  src: url("../fonts/Arvo.eot?#iefix") format("embedded-opentype"), url("../fonts/Arvo.woff2") format("woff2"), url("../fonts/Arvo.woff") format("woff"), url("../fonts/Arvo.ttf") format("truetype"), url("../fonts/Arvo.svg#Arvo") format("svg");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Arvo-Bold";
-  src: url("../fonts/Arvo-Bold.eot");
-  src: url("../fonts/Arvo-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Arvo-Bold.woff2") format("woff2"), url("../fonts/Arvo-Bold.woff") format("woff"), url("../fonts/Arvo-Bold.ttf") format("truetype"), url("../fonts/Arvo-Bold.svg#Arvo-Bold") format("svg");
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto-Medium.eot");
+  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -39,9 +47,22 @@
 }
 
 h1 {
-  font-family: "Arvo-Bold", sans-serif;
+  font-family: "Roboto-Bold", sans-serif;
   font-size: 42px;
   color: #5B5E5F;
+}
+
+h3 {
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #5B5E5F;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
 }
 
 .text-white {
@@ -104,6 +125,11 @@ h1 {
   border: 2px solid #457692;
   padding: 12px 16px;
 }
+@media screen and (max-width: 992px) {
+  .btn-xlg {
+    border: none;
+  }
+}
 
 .btn-lg {
   font-size: 18px;
@@ -124,6 +150,27 @@ h1 {
   box-shadow: none;
 }
 
+.navbar-nav .nav-item .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #5B5E5F;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin: 30px 16px;
+  padding: 0;
+  display: inline-block;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav .nav-item .nav-link {
+    margin: 24px 16px;
+  }
+}
+
+.navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
+  color: #457692;
+}
+
 .right {
   position: relative;
   margin-left: -8.333333%;
@@ -139,7 +186,7 @@ h1 {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .left,
 .right {
     margin-left: 0px;
@@ -225,10 +272,15 @@ footer ul li > a:hover {
   color: #5B5E5F;
   position: absolute;
   top: 140px;
-  right: -80px;
+  right: -65px;
 }
 .articles-section .owl-nav button.owl-next span {
   display: none;
+}
+@media screen and (max-width: 1280px) {
+  .articles-section .owl-nav button.owl-next {
+    display: none;
+  }
 }
 .articles-section .owl-nav button.owl-prev {
   background-image: url("../images/arrow-prev.svg");
@@ -239,13 +291,24 @@ footer ul li > a:hover {
   color: #5B5E5F;
   position: absolute;
   top: 140px;
-  left: -80px;
+  left: -65px;
 }
 .articles-section .owl-nav button.owl-prev span {
   display: none;
 }
+@media screen and (max-width: 1280px) {
+  .articles-section .owl-nav button.owl-prev {
+    display: none;
+  }
+}
 .articles-section .card-body {
   padding: 48px;
+}
+
+@media screen and (max-width: 992px) {
+  .dropdown-menu {
+    border: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
