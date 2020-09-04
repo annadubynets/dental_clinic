@@ -179,7 +179,7 @@ p {
 
 @media screen and (max-width: 576px) {
   .navbar .logo-img {
-    width: 80px;
+    width: 100px;
   }
 }
 
