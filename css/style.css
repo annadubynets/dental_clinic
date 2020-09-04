@@ -1,4 +1,4 @@
-@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "../fontawesome-free-5.14.0-web/css/all.css";
 @import "bootstrap.min.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.css";
@@ -121,13 +121,19 @@ p {
   font-size: 18px;
   line-height: 26px;
   background-color: #ffffff;
-  color: #457692;
-  border: 2px solid #457692;
+  color: #5B5E5F;
+  border: 2px solid #5B5E5F;
   padding: 12px 16px;
 }
 @media screen and (max-width: 992px) {
   .btn-xlg {
     border: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .btn-xlg {
+    font-size: 10px;
+    padding: 0px;
   }
 }
 
@@ -163,12 +169,18 @@ p {
 }
 @media screen and (max-width: 992px) {
   .navbar-nav .nav-item .nav-link {
-    margin: 24px 16px;
+    margin: 14px 16px;
   }
 }
 
 .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
   color: #457692;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .logo-img {
+    width: 80px;
+  }
 }
 
 .right {
@@ -198,19 +210,11 @@ p {
     background-image: url("../images/main_mobile.png");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 67px 0px 71px;
   }
 }
 
-.services-section {
-  padding: 76px 0px;
-}
 .services-section .owl-nav button.owl-next, .services-section .owl-nav button.owl-prev {
   display: none;
-}
-
-.advantages-section {
-  padding-bottom: 76px;
 }
 
 .owl-dots .owl-dot span {
@@ -219,7 +223,7 @@ p {
   border: 1px solid #5B5E5F;
   display: inline-block;
   margin: 0 9px;
-  margin-top: 57px;
+  margin-top: 50px;
 }
 
 .owl-dots {
@@ -228,39 +232,6 @@ p {
 
 .owl-dots .owl-dot.active span {
   background-color: #5B5E5F;
-}
-
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-footer ul li > a {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  color: #5B5E5F;
-}
-footer ul li > a:hover {
-  color: #96999A;
-  text-decoration: none;
-}
-
-.social-img {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  color: #ffffff;
-  background-color: #96999A;
-  line-height: 27px;
-  font-size: 16px;
-  text-align: center;
-}
-.social-img a {
-  color: #ffffff;
-  position: relative;
-  bottom: 20px;
 }
 
 .articles-section .owl-nav button.owl-next {
@@ -301,14 +272,47 @@ footer ul li > a:hover {
     display: none;
   }
 }
-.articles-section .card-body {
-  padding: 48px;
+.articles-section .card {
+  border: none;
 }
 
 @media screen and (max-width: 992px) {
   .dropdown-menu {
     border: none;
   }
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer ul li > a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #5B5E5F;
+}
+footer ul li > a:hover {
+  color: #96999A;
+  text-decoration: none;
+}
+
+.social-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  background-color: #96999A;
+  line-height: 27px;
+  font-size: 16px;
+  text-align: center;
+}
+.social-img a {
+  color: #ffffff;
+  position: relative;
+  bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

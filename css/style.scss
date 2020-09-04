@@ -1,4 +1,4 @@
-@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "../fontawesome-free-5.14.0-web/css/all.css";
 @import "bootstrap.min.css";
 @import "owl.carousel.min.css";
 @import "owl.theme.default.css";
@@ -36,19 +36,13 @@
       background-image: url("../images/main_mobile.png");
       background-repeat: no-repeat;
       background-position: center;
-      padding: 67px 0px 71px;
     }
 }
 
 .services-section {
-  padding: 76px 0px;
   .owl-nav button.owl-next, .owl-nav button.owl-prev {
     display: none;
   }
-}
-
-.advantages-section {
-  padding-bottom: 76px;
 }
 
 .owl-dots .owl-dot span {
@@ -57,7 +51,7 @@
   border: 1px solid $black-color;
   display: inline-block;
   margin: 0 9px;
-  margin-top: 57px;
+  margin-top: 50px;
 }
 
 .owl-dots {
@@ -66,39 +60,6 @@
 
 .owl-dots .owl-dot.active span {
   background-color: $black-color;
-}
-
-footer ul{
-  list-style-type: none;
-  padding: 0;
-  li > a {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: $black-color;
-    &:hover {
-      color: $gray-color;
-      text-decoration: none;
-    }
-  }
-}
-
-.social-img {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  color: $white-color;
-  background-color: $gray-color;
-  line-height: 27px;
-  font-size: 16px;
-  text-align: center;
-  a {
-    color: $white-color;
-    position: relative;
-    bottom: 20px;
-  }
 }
 
 .articles-section {
@@ -130,22 +91,56 @@ footer ul{
     position: absolute;
     top: 140px;
     left: -65px;
+
     span {
       display: none;
     }
+
     @include max-screen(1280px) {
       display: none;
     }
   }
-
-  .card-body {
-    padding: 48px;
+  .card {
+    border: none;
   }
 }
 
 .dropdown-menu {
   @include max-screen($lg-screen){
     border: none;
+  }
+}
+
+footer ul{
+  list-style-type: none;
+  padding: 0;
+  li > a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    color: $black-color;
+    &:hover {
+      color: $gray-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.social-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: $white-color;
+  background-color: $gray-color;
+  line-height: 27px;
+  font-size: 16px;
+  text-align: center;
+  a {
+    color: $white-color;
+    position: relative;
+    bottom: 20px;
   }
 }
 

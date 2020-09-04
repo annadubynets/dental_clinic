@@ -16,12 +16,20 @@
   display: inline-block;
   text-transform: uppercase;
   @include max-screen($lg-screen) {
-    margin: 24px 16px;
+    margin: 14px 16px;
   }
 }
 
 .navbar-nav .nav-item .nav-link {
   &:hover, &:focus {
     color: $blue-color;
+  }
+}
+
+.navbar {
+  .logo-img {
+    @include max-screen($sm-screen) {
+      width: 80px;
+    }
   }
 }
