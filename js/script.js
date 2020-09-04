@@ -20,6 +20,7 @@ $('.articles-section .owl-carousel').owlCarousel({
     loop:true,
     margin:30,
     nav:true,
+    autoHeight:true,
     responsive:{
         0:{
             items:1,
